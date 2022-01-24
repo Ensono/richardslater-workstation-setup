@@ -1,0 +1,1 @@
+winget export --output ./packages.json --accept-source-agreements

@@ -8,6 +8,7 @@ if (($shortCutsToDelete | Measure-Object).Count -gt 0) {
     $shortCutsToDelete | Remove-Item;
 }
 
+# remove executables that get in the way of functional SSH and PGP authentication
 $gpgBinRoot = "C:\Program Files\Git\usr\bin\"
 $gbgBinExecutablesToRemove = @(
   "gpg.exe"
